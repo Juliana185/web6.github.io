@@ -93,5 +93,5 @@ legend {
 
 #totalPrice {
     font-weight: bold;
-    color: #e74c3c; /* Красный цвет для выделения итоговой цены */
+    color: #red;
 }

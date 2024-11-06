@@ -27,33 +27,33 @@
 
     <form id="calculator">
         <label for="quantity">Количество:</label>
-        <input type="number" id="quantity" value="0" min="0" required>
+        <input type="number" id="quantity" value="1" min="1" required>
 
         <fieldset>
             <legend>Тип услуги:</legend>
             <label>
-                <input type="radio" name="serviceType" value="type1" checked> Тип 1
+                <input type="radio" name="serviceType" value="type1" checked> Ошейник
             </label>
             <label>
-                <input type="radio" name="serviceType" value="type2"> Тип 2
+                <input type="radio" name="serviceType" value="type2"> Лежанка
             </label>
             <label>
-                <input type="radio" name="serviceType" value="type3"> Тип 3
+                <input type="radio" name="serviceType" value="type3"> Корм - 500г.
             </label>
         </fieldset>
 
         <div id="optionsContainer" class="hidden">
-            <label for="options">Опции:</label>
+            <label for="options">Выберите размер</label>
             <select id="options">
-                <option value="">Выберите опцию</option>
-                <option value="option1">Опция 1</option>
-                <option value="option2">Опция 2</option>
+                <option value="option1">S</option>
+                <option value="option2">M</option>
+                <option value="option3">L</option>
             </select>
         </div>
 
         <div id="propertiesContainer" class="hidden">
             <label>
-                <input type="checkbox" id="property"> Свойство
+                <input type="checkbox" id="property"> Гипоаллергенный
             </label>
         </div>
 

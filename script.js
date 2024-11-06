@@ -20,13 +20,19 @@ function updatePrice() {
     totalPrice = prices[selectedType] * quantity;
 
     if (selectedType === 'type2' && optionsSelect.value === 'option1') {
-        totalPrice += 50; // добавляем стоимость опции 1
-    } else if (selectedType === 'type2' && optionsSelect.value === 'option2') {
-        totalPrice += 100; // добавляем стоимость опции 2
+        totalPrice += 100; // добавляем стоимость опции 1
+    }
+
+    if (selectedType === 'type2' && optionsSelect.value === 'option2') {
+        totalPrice += 200; // добавляем стоимость опции 2
+    }
+
+    if (selectedType === 'type2' && optionsSelect.value === 'option3') {
+        totalPrice += 300; // добавляем стоимость опции 3
     }
 
     if (selectedType === 'type3' && propertyCheckbox.checked) {
-        totalPrice += 150; // добавляем стоимость свойства
+        totalPrice += 300; // добавляем стоимость свойства
     }
 
     totalPriceDisplay.textContent = totalPrice;
